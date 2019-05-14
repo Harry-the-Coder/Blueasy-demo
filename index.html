@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Blueasy</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<div style="display: none">
+  <svg xmlns="http://www.w3.org/2000/svg">
+    <symbol id="coffee-icon" viewBox="0 0 16 16">
+      <path d="M14 13l-4 1h-6l-4-1v-1h14z"></path>
+      <path d="M14.7 3h-1.7v-1h-12v5c0 1.5 0.8 2.8 2 3.4v0.6h8v-0.6c0.9-0.5 1.6-1.4 1.9-2.4 0 0 0.1 0 0.1 0 2.3 0 2.9-2 3-3.5 0.1-0.8-0.5-1.5-1.3-1.5zM13 7v-3h1.7c0.1 0 0.2 0.1 0.2 0.1s0.1 0.1 0.1 0.3c-0.2 2.6-1.6 2.6-2 2.6z"></path>
+    </symbol>
+    <symbol id="dribble-icon" viewBox="0 0 564.264 564.264">
+      <path d="M282.132,564.264c-38.76,0-75.276-7.446-109.548-22.338s-64.158-35.088-89.658-60.588
+      S37.23,425.952,22.338,391.68S0,320.892,0,282.132s7.446-75.276,22.338-109.548s35.088-64.158,60.588-89.658
+      s55.386-45.696,89.658-60.588S243.372,0,282.132,0s75.276,7.446,109.548,22.338s64.158,35.088,89.658,60.588
+      c25.5,25.5,45.696,55.386,60.588,89.658s22.338,70.788,22.338,109.548s-7.446,75.276-22.338,109.548s-35.088,64.158-60.588,89.658
+      s-55.386,45.696-89.658,60.588C357.408,556.817,320.892,564.264,282.132,564.264z M520.2,320.688
+      c-2.04-0.405-7.551-1.836-16.524-4.281c-8.976-2.448-20.196-4.593-33.66-6.429s-28.866-2.958-46.206-3.363
+      c-17.34-0.408-35.394,0.813-54.162,3.672c7.752,21.624,14.484,42.126,20.196,61.506s10.506,36.618,14.382,51.714
+      s6.732,27.744,8.568,37.944c1.836,10.197,3.162,17.136,3.978,20.808c26.931-18.36,49.473-41.412,67.626-69.156
+      C502.554,385.355,514.488,354.552,520.2,320.688z M376.38,504.288c-0.816-5.307-2.448-13.668-4.896-25.092
+      c-2.445-11.427-5.712-25.194-9.792-41.313c-4.077-16.116-9.075-34.068-14.991-53.854c-5.916-19.788-13.158-40.698-21.729-62.73
+      c-0.408,0.408-1.02,0.612-1.836,0.612c-33.864,11.832-62.628,26.01-86.292,42.534c-23.664,16.521-42.942,32.436-57.834,47.733
+      s-25.806,28.662-32.742,40.086s-11.016,18.156-12.24,20.196c20.808,15.912,43.656,28.354,68.544,37.332
+      c24.888,8.976,51.408,13.464,79.56,13.464C315.18,523.26,346.596,516.936,376.38,504.288z M102.816,443.7
+      c1.224-2.448,6.324-10.2,15.3-23.258c8.976-13.057,21.726-27.946,38.25-44.677c16.524-16.728,36.618-33.558,60.282-50.488
+      c23.664-16.934,51.204-30.497,82.62-40.697c1.632-0.816,3.162-1.326,4.59-1.53c1.431-0.204,2.958-0.714,4.593-1.53
+      c-3.267-6.936-6.528-13.668-9.792-20.196c-3.267-6.528-6.528-13.26-9.792-20.196c-30.192,8.976-59.568,15.81-88.128,20.502
+      s-54.162,8.058-76.806,10.098c-22.644,2.04-41.412,3.162-56.304,3.366S43.862,275.4,41.006,275.4v7.344
+      c0,31.008,5.508,60.18,16.524,87.516S83.64,422.076,102.816,443.7z M46.512,233.172c2.448,0,10.2-0.102,23.256-0.306
+      s29.58-1.224,49.572-3.06s42.942-4.794,68.85-8.874s52.938-9.792,81.09-17.136c-10.2-17.544-20.298-34.272-30.294-50.184
+      s-19.074-30.09-27.234-42.534c-8.16-12.444-15.096-22.746-20.808-30.906s-9.384-13.464-11.016-15.912
+      c-34.272,15.912-63.138,38.658-86.598,68.238S54.264,195.636,46.512,233.172z M225.828,48.348c1.632,2.04,5.406,7.14,11.322,15.3
+      s13.056,18.564,21.42,31.212c8.364,12.648,17.544,27.03,27.541,43.146c9.995,16.116,19.892,33.15,29.684,51.102
+      c21.216-7.752,39.576-16.422,55.08-26.01s28.354-18.666,38.556-27.234s17.853-15.912,22.95-22.032
+      c5.1-6.12,8.262-9.996,9.486-11.628c-21.624-19.176-46.002-34.068-73.137-44.676c-27.132-10.608-55.998-15.912-86.598-15.912
+      C263.364,41.616,244.596,43.86,225.828,48.348z M468.792,130.356c-1.227,1.632-4.794,5.814-10.71,12.546
+      c-5.916,6.732-14.28,14.688-25.092,23.868c-10.813,9.18-24.378,18.972-40.698,29.376c-16.32,10.404-35.7,20.094-58.143,29.07
+      c2.856,5.712,5.61,11.526,8.265,17.442c2.649,5.916,5.202,11.73,7.647,17.442c0.816,2.04,1.734,4.08,2.754,6.12
+      c1.021,2.04,1.938,4.08,2.757,6.12c19.989-2.448,39.573-3.468,58.752-3.06c19.176,0.408,36.516,1.326,52.02,2.754
+      s28.356,3.06,38.556,4.896s16.32,2.958,18.36,3.366c-0.408-28.56-5.304-55.488-14.688-80.784S485.928,151.164,468.792,130.356z"/>
+    </symbol>
+    <symbol id="google-plus-icon" viewBox="0 0 512 512">
+      <path d="M255.1,51.7c3.6,7.6,7.6,14.4,10.3,21.6c11.3,31,13.5,62.4,1.8,93.8c-7,18.7-18.8,34.2-33.3,47.9c-6,5.7-11.6,12-16.2,18.8   c-4.3,6.5-4,13.8,0.4,20.7c8.6,13.7,20.3,24.5,32.4,35c26.1,22.7,39.9,51.5,41.4,86.1c0.8,17,0.5,34-5.1,50.4   c-10.7,30.9-30.9,53.7-60.1,68.2c-36.6,18.3-75,18.7-114.1,10.4c-23.4-5-45-14.2-63.3-30C20.2,449.4,12,414.8,24,379.9   c17.6-51.1,55.8-78,107.7-87.3c7.2-1.3,14.5-1.5,22.5-2.2c-6.4-14.3-7.8-29.2-5-44.1c-9-1.8-17.7-2.9-26.1-5.4   c-24.2-7.1-42.7-22-56.3-43C51,173.7,44.4,146.6,46.5,118c2.2-30,14.7-55.7,35.8-77.1c16.7-17,36.6-28.7,59.9-34   c7.9-1.8,16.1-2.7,24.2-2.8c41-0.3,82-0.1,123-0.1c7.3,0,10.2,1.9,12.3,7.8c1.8,5,0.1,10.3-4.5,14.2c-7.9,6.7-15.9,13.1-23.4,20.2   c-4.3,4-8.7,5.8-14.4,5.2C258.2,51.3,256.9,51.5,255.1,51.7z M165.8,462.4c5-0.6,12.1-1.2,19.2-2.4c14.7-2.4,28.2-7.6,39-18.5   c11.9-11.9,15.4-26.9,15.9-42.9c0.5-13.4-2.3-26.2-12.4-35.7c-10.8-10.3-22.5-19.7-33.9-29.3c-1.7-1.4-4.2-2-6.5-2.5   c-27.1-6.4-52.3-1.9-75.1,14.2c-32.9,23.1-37.1,65.1-9.6,94.2C119.1,456.9,140.2,463,165.8,462.4z M210.4,144   c0-15.7-3.1-30.8-8.6-45.4c-5.9-15.6-14.2-29.8-27.6-40.3c-9.8-7.7-20.8-12.2-33.5-8.5c-13.5,3.9-20.4,14.5-24.7,26.8   c-8,22.8-6.7,45.9-0.2,68.8c5.8,20.2,15.2,38.3,31.9,51.9c17,13.8,38.4,13,50.8-6.5C207.7,176.5,210.4,160.6,210.4,144z"/><path d="M373.2,164.6c0-12.7,0-25.3,0-38c0-10.1,3.8-13.8,14-13.8c5,0,10-0.1,15,0c6.5,0.1,10.2,3.4,11.1,9.8c0.3,2,0.3,4,0.3,6   c0,25,0.1,50-0.1,75c0,4.5,1.1,6,5.8,5.9c21-0.2,42-0.1,63-0.1c9.1,0,13,3.9,13.2,13c0.1,7,0.1,14,0,21   c-0.1,9.6-3.9,13.4-13.4,13.4c-21,0-42,0.1-63-0.1c-4.4,0-5.6,1.3-5.6,5.7c0.2,25.3,0.1,50.7,0.1,76c0,11.7-3.5,15.2-15.1,15.2   c-4,0-8,0-12,0c-8.9,0-13.2-4.2-13.2-13.1c-0.1-20.8,0-41.7,0-62.5c0-5-0.3-10,0.1-15c0.3-4.7-1.1-6.3-6.1-6.3   c-20.5,0.3-41,0.1-61.5,0.1c-10.9,0-14.3-3.4-14.3-14.4c0-6.5-0.1-13,0-19.5c0.1-10.1,3.6-13.6,13.5-13.6c20.8,0,41.7-0.1,62.5,0.1   c4.6,0,6-1.3,5.9-5.9C373,190.6,373.2,177.6,373.2,164.6z"/>
+    </symbol>
+    <symbol id="twitter-icon" viewBox="0 0 512 512">
+      <path d="M3.5,421.4c56,5.1,106.1-8.9,151.5-42.9c-7-1.6-13.4-1.6-19.5-3.1c-35.7-8.5-60.4-30-74.9-63.5   c-0.7-1.7-2.5-3.8-0.9-5.5c1.2-1.3,3.5-0.2,5.2,0c12.6,1.3,25.2,0.9,37.6-2c0.2-2.2-1.4-2-2.6-2.4c-30.7-8.2-53-26.5-67.4-54.8   c-6.6-13-10.2-26.6-10.6-41.2c-0.2-5.7,0.1-5.8,5.4-3.3c12.6,6,25.8,9.4,40.9,10.1c-6.9-5.6-13.1-10.5-18.4-16.4   c-16.1-17.9-25.1-38.8-27-62.9c-1.5-19.6,2.6-37.9,11.1-55.5c1.9-3.9,3.6-3.6,6-0.7C56.6,97.7,76.1,115,97.6,130   c16,11.2,33,20.5,50.9,28.4c23.6,10.3,48.1,17.2,73.5,21.3c8,1.3,16.2,1.6,24.3,2.4c4.1,0.4,5.2-0.8,4.4-5   c-4.1-21.6-1.3-42.6,8.1-62.3c16.1-33.6,43.1-54,79.8-59.4c32.6-4.8,61.9,4.5,86.2,27.4c3.7,3.5,7,4.4,12,3.1   c19.6-5,38.3-12.1,55.9-22.1c0.5-0.3,1.1-0.4,2.9-1.1c-8.2,24.1-22.7,41.9-43,55.5c4.7,0.9,18.6-1.6,28.2-4.6   c9.2-2.9,18.4-5.5,27.2-9.4c1.2,1.3,0.1,2-0.4,2.7c-11.7,16.5-25.1,31.4-41.1,43.8c-2.2,1.7-4.3,3.6-6.6,5.2   c-1.7,1.2-1.8,2.7-1.7,4.4c0.7,18.2-0.6,36.3-3.2,54.2c-2.7,18.3-7.3,36.1-13.4,53.6c-5,14.3-10.9,28.2-17.9,41.7   c-17.3,33.2-39.8,62.4-67.9,87.3c-29.9,26.4-63.9,45.4-101.9,57.2c-23.7,7.4-48,11.7-72.9,13c-19.2,1-38.3,0.7-57.3-1.7   c-27.2-3.3-53.4-10.7-78.6-21.5c-12.9-5.5-25.1-12.1-37.3-19C6.1,424.4,4.4,423.6,3.5,421.4z"/>
+    </symbol>
+  </svg>
+</div>
+<header class="page-header">
+  <div class="container page-header__container">
+    <h2 class="page-header__title">
+      <a class="page-header__link">
+        <span class="visually-hidden">Blueasy logo</span>
+        <img src="img/blueasy-logo.svg" class="page-header__logo" width="127" height="23">
+      </a>
+    </h2>
+    <nav class="nav-menu">
+      <ul class="nav-menu__list">
+        <li class="nav-menu__list-item"><a class="nav-menu__link nav-menu__link--current">Home</a></li>
+        <li class="nav-menu__list-item"><a href="#" class="nav-menu__link">Services</a></li>
+        <li class="nav-menu__list-item"><a href="#" class="nav-menu__link">Features</a></li>
+        <li class="nav-menu__list-item"><a href="#" class="nav-menu__link">Portfolio</a></li>
+        <li class="nav-menu__list-item"><a href="#" class="nav-menu__link">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+<div class="presentation">
+  <p class="presentation__row">“I’m looking for the unexpected”</p>
+  <p class="presentation__row">“I’m looking for things I’ve never seen before”</p>
+</div>
+<section class="services">
+  <div class="container services__container">
+    <h2 class="section-title section-title--services"><span class="section-title__underline">Ser</span>vices</h2>
+    <ul class="services__list">
+      <li class="services__list-item">
+        <h3 class="services__title">Coffee</h3>
+        <p class="services__description">Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
+      </li>
+      <li class="services__list-item">
+        <h3 class="services__title">Instant</h3>
+        <p class="services__description">Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
+      </li>
+      <li class="services__list-item">
+        <h3 class="services__title">Serious</h3>
+        <p class="services__description">Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
+      </li>
+      <li class="services__list-item">
+        <h3 class="services__title">Frame</h3>
+        <p class="services__description">Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
+      </li>
+     </ul>
+  </div>
+</section>
+<section class="portfolio">
+  <div class="container portfolio__container">
+    <div class="portfolio__header">
+      <h2 class="section-title section-title--portfolio"><span class="section-title__underline">Por</span>tfolio</h2>
+      <nav class="nav-menu">
+        <ul class="nav-menu__list">
+          <li class="nav-menu__list-item"><a class="nav-menu__link nav-menu__link--portfolio nav-menu__link--current">All</a></li>
+          <li class="nav-menu__list-item"><a href="#" class="nav-menu__link nav-menu__link--portfolio">Panoramas</a></li>
+          <li class="nav-menu__list-item"><a href="#" class="nav-menu__link nav-menu__link--portfolio">Portraits</a></li>
+          <li class="nav-menu__list-item"><a href="#" class="nav-menu__link nav-menu__link--portfolio">Macro</a></li>
+          <li class="nav-menu__list-item"><a href="#" class="nav-menu__link nav-menu__link--portfolio">Journal</a></li>
+        </ul>
+    </nav>
+    </div>
+    <ul class="portfolio__photos">
+      <li class="portfolio__photo-item">
+        <a href="img/photo-1.jpg" class="portfolio__photo-link" target="_blank">
+          <img src="img/photo-1.jpg" alt="photo" width="270" height="270">
+        </a>
+      </li>
+      <li class="portfolio__photo-item">
+        <a href="img/photo-2.jpg" class="portfolio__photo-link" target="_blank">
+          <img src="img/photo-2.jpg" alt="photo" width="270" height="270">
+        </a>
+      </li>
+      <li class="portfolio__photo-item">
+        <a href="img/photo-3.jpg" class="portfolio__photo-link" target="_blank">
+          <img src="img/photo-3.jpg" alt="photo" width="270" height="270">
+        </a>
+      </li>
+      <li class="portfolio__photo-item">
+        <a href="img/photo-4.jpg" class="portfolio__photo-link" target="_blank">
+          <img src="img/photo-4.jpg" alt="photo" width="270" height="270">
+        </a>
+      </li>
+      <li class="portfolio__photo-item">
+        <a href="img/photo-5.jpg" class="portfolio__photo-link" target="_blank">
+          <img src="img/photo-5.jpg" alt="photo" width="270" height="270">
+        </a>
+      </li>
+      <li class="portfolio__photo-item">
+        <a href="img/photo-6.jpg" class="portfolio__photo-link" target="_blank">
+          <img src="img/photo-6.jpg" alt="photo" width="270" height="270">
+        </a>
+      </li>
+      <li class="portfolio__photo-item">
+        <a href="img/photo-7.jpg" class="portfolio__photo-link" target="_blank">
+          <img src="img/photo-7.jpg" alt="photo" width="270" height="270">
+        </a>
+      </li>
+      <li class="portfolio__photo-item">
+        <a href="img/photo-8.jpg" class="portfolio__photo-link" target="_blank">
+          <img src="img/photo-8.jpg" alt="photo" width="270" height="270">
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="default">
+  <div class="container default__container">
+    <div class="default__visit">
+      <h2 class="section-title"><span class="section-title__underline">Jus</span>t default section</h2>
+      <p class="default__text">Bear claw marzipan bear claw applicake I love muffin. Lemon drops gummi bears pastry gummi bears sesame snaps I love unerdwear.com. Soufflé cotton candy dessert candy ice cream wafer gummies cheesecake brownie.</p>
+      <p class="default__text"> Muffin chupa chups jelly beans sweet pie applicake. Croissant chocolate cake I love pudding. Ice cream I love powder pudding apple pie marshmallow. Cupcake marzipan oat cake bonbon I love candy canes toffee.</p>
+      <a href="#" class="default__link">Visit me</a>
+    </div>
+    <div class="default__video-container">
+      <iframe src="https://www.youtube.com/embed/uW4F8AEiofk" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" class="default__video" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+<div class="short-block">
+  <div class="container short-block__container">
+    <div class="short-block__header">
+      <h2 class="section-title"><span class="section-title__underline">Twi</span>tter</h2>
+      <a href="#" class="short-block__to-twitter">
+        <span class="visually-hidden">The link to Twitter</span>
+        <svg class="short-block__icon" width="28" height="28" fill="#ffffff">
+          <use xlink:href="#twitter-icon"></use>
+        </svg>
+      </a>
+    </div>
+    <p class="short-block__text">
+      Unerdwear cookie liquorice. Cake donut cupcake lollipop soufflé candy.
+      Chocolate oat cake <strong>@cheesecake</strong> tootsie roll.
+    </p>
+  </div>
+</div>
+<section class="who-is">
+  <div class="container who-is__container">
+    <h2 class="section-title section-title--who"><span class="section-title__underline">Wh</span>o is John Doe?</h2>
+    <div class="who-is__box">
+      <p class="who-is__box-item">Bear claw marzipan bear claw applicake I love muffin. Lemon drops gummi bears pastry gummi bears sesame snaps I love unerdwear.com. Soufflé cotton candy dessert candy ice cream wafer gummies cheesecake brownie.</p>
+      <p class="who-is__box-item">Pudding dessert jujubes tiramisu gingerbread croissant tiramisu applicake. Sesame snaps sugar plum cotton candy chocolate bonbon lemon drops candy canes cotton candy.Cake toffee pie bear claw pastry.</p>
+      <p class="who-is__box-item">Muffin chupa chups jelly beans sweet pie applicake. Croissant chocolate cake I love pudding. Ice cream I love powder pudding apple pie marshmallow. Cupcake marzipan oat cake bonbon I love candy canes toffee.
+      </p>
+      <ul class="who-is__box-item who-is__box-item--list">
+        <li class="who-is__list-item">
+          <a href="#" class="who-is__social-link">
+            <span class="visually-hidden">The link to Twitter</span>
+            <svg class="who-is__icon" width="28" height="28" fill="#ffffff">
+              <use xlink:href="#twitter-icon"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="who-is__list-item">
+          <a href="#" class="who-is__social-link">
+            <span class="visually-hidden">The link to Google+</span>
+            <svg class="who-is__icon" width="28" height="29" fill="#ffffff">
+              <use xlink:href="#google-plus-icon"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="who-is__list-item">
+          <a href="#" class="who-is__social-link">
+            <span class="visually-hidden">The link to Dribble</span>
+            <svg class="who-is__icon" width="26" height="27" fill="#ffffff">
+              <use xlink:href="#dribble-icon"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="who-is__list-item">
+          <a href="#" class="who-is__social-link">
+            <svg class="who-is__icon" width="35" height="28" fill="#ffffff">
+              <use xlink:href="#coffee-icon"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+  </div>
+</div>
+</section>
+<div class="short-block short-block--testimonials">
+  <div class="container short-block__container">
+    <div class="short-block__header">
+      <h2 class="section-title"><span class="section-title__underline">Tes</span>timonials</h2>
+      <span class="short-block__quotes"></span>
+    </div>
+    <q class="short-block__citation">Applicake chocolate cake wafer toffee pie soufflé wafer.Tart marshmallow wafer macaroon cheesecake jelly. Gingerbread cookie soufflé sweet roll sweet roll jelly-o.</q>
+    <cite class="short-block__citation-author">-Walter White</cite>
+  </div>
+</div>
+<section class="contact">
+  <div class="container contact__container">
+    <h2 class="section-title"><span class="section-title__underline">Con</span>tact</h2>
+    <form action="post" class="contact__form">
+      <label for="full-name" class="contact__label">Full name</label>
+      <input type="text" name="name" id="full-name" class="contact__field">
+      <label for="email" class="contact__label">Email</label>
+      <input type="email" name="email" id="email" class="contact__field">
+      <label for="message-area" class="contact__label">Message</label>
+      <textarea name="message-area" id="message-area" class="contact__message-area" rows="10" cols="3"></textarea>
+      <button type="submit" class="form-btn">Message</button>
+    </form>
+    <div class="contact__info">
+      <p class="contact__info-block">Jujubes bear claw croissant wafer sweet lemon drops brownie chocolate bar.Sweet lollipop halvah tootsie roll cake fruitcake. Chocolate cake chocolate bar gingerbread lollipop tart. Jujubes bear claw donut chupa chups.
+      </p>
+      <p class="contact__info-block"> Linda Newman <br> W325 State Road 123 <br> Mondovi, WI(Wisconsin) 98746-54321 <br> (715) 946 - 1234</p>
+    </div>
+  </div>
+</section>
+</main>
+<section class="page-footer">
+  <div class="container page-footer__container">
+    <ul class="page-footer__menu">
+      <li class="page-footer__menu-item"><a href="#" class="page-footer__link">Home</a></li>
+      <li class="page-footer__menu-item"><a href="#" class="page-footer__link">Services</a></li>
+      <li class="page-footer__menu-item"><a href="#" class="page-footer__link">Portfolio</a></li>
+      <li class="page-footer__menu-item"><a href="#" class="page-footer__link">Contact</a></li>
+    </ul>
+    <span class="page-footer__date">2013 ©</span>
+  </div>
+</section>
+<div class="modal">
+  <div class="container modal__container">
+    <div class="modal__img">
+      <p class="modal__description">Was trying to make a simple photo-viewer with JavaScript.</p>
+      <p class="modal__description">This is just a demo. Thank you :)</p>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
